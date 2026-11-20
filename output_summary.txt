@@ -1,0 +1,77 @@
+=== RAW DATA ===
+Shape: (10720, 12)
+Missing values:
+ region      151
+discount    100
+dtype: int64
+Duplicate rows: 120
+
+=== AFTER CLEANING ===
+Rows: 10,600 | Nulls left: 0 | sales mismatches: 0
+
+=== KPIs ===
+Total orders      : 10,600
+Total sales       : ₹20,908,367
+Total profit      : ₹7,161,058  (34.2% margin)
+Avg order value   : ₹1,972
+Loss-making orders: 8 (0.1%)
+
+=== KEY INSIGHTS ===
+Top 5 products by revenue:
+ product
+Office Chair            2165141.0
+Bluetooth Headphones    2159761.0
+Smart Watch             1937362.0
+Power Bank              1845068.0
+Laptop Backpack         1644556.0
+Name: sales, dtype: float64
+
+Top 5 products by units:
+ product
+Gel Pen Box       2419
+Notebook Pack     2054
+Phone Case        1831
+Water Bottle      1591
+Wireless Mouse    1339
+Name: quantity, dtype: int64
+
+Category share of sales (%):
+ category
+Electronics        46.0
+Furniture          26.8
+Accessories        14.6
+Office Supplies    12.5
+Name: sales, dtype: float64
+
+Category profit margin (%):
+ category
+Accessories        45.8
+Electronics        33.2
+Furniture          25.2
+Office Supplies    43.8
+dtype: float64
+
+Best month : Oct 2025 (₹1,330,154)
+Weakest    : May 2024 (₹644,821)
+
+Yearly sales: {2024: 9677530.0, 2025: 11230837.0} | growth 2025 vs 2024: 16.1%
+Oct+Nov share of total sales: 22.1%
+Weekend share of sales: 32.7% (2 of 7 days)
+
+Avg profit margin by discount %:
+ discount
+0     47.0
+5     44.5
+10    41.2
+15    37.8
+20    33.7
+30    24.9
+Name: profit_margin, dtype: float64
+
+Region share (%):
+ region
+West     38.8
+South    34.2
+North    22.1
+East      4.9
+Name: sales, dtype: float64
